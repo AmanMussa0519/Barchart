@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="bar.js"></script>
+<div id="wrapper"></div>
+
+<button onclick="tempLow()">Temperature Low</button>
+<button id="tempHigh">Temperature High</button>
+<script>
+    var btnTempHigh = document.getElementById("tempHigh");
+    btnTempHigh.addEventListener("click", tempHigh);
+</script>
+<button onclick="tempMin()">Temperature Min</button>
+<button onclick="tempMax()">Temperature Max</button>
+<button onclick="reloadPage()">Clear</button>
+</body>
+</html>
